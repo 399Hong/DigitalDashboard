@@ -1,0 +1,195 @@
+circle {
+    fill: rgb(240, 240, 240);
+    stroke: rgb(255, 204, 0);
+    stroke-width: 200;
+    stroke-dasharray: 628 628;
+    /*parameter*/
+    transition: stroke-dasharray .3s;
+  }
+polyline{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 1.5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#svg1 {
+    margin-top: 50px;
+   
+    transform: rotate(-90deg);
+    /*circle indicator starts from middle*/
+    background: rgb(240, 240, 240);
+    border-radius: 50%;
+    /*display: inline-block;*/
+   
+    /*control char*/
+  }
+
+.b {
+    text-transform: capitalize;
+    font-size: 13px;
+    cursor: pointer;
+ 
+    border: none;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    background-color: transparent;
+    padding: 5px 10px;
+    outline: none;
+    border-radius: 2px;
+    transition: background-color .1s ease, color .2s ease;
+  }
+.b:last-of-type {
+      margin-right: 0;
+}
+
+#buttons button:hover{
+    font-weight: 400;
+    background-color: #0074d9;
+    color: white;
+}
+.active{
+    font-weight: 400;
+    background-color: #0074d9;
+    color: white;
+
+}
+
+  
+#pieChart{
+ 
+    
+    width: 215px;
+    height: 300px;
+  
+  
+    float:left;
+  
+   
+}
+
+
+#banner{
+    background-color:rgb(255, 205, 1) ;
+    width : 100%;
+    
+    padding: 30px 0;
+    text-align: center;
+    transition: background-color .3s ease;
+
+    overflow: auto
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+  }
+
+#buttons{
+    display:inline-block;
+}
+button{
+    text-align: center;
+    width: 100px;
+    height: 50px;
+}
+
+
+#pieChart p{
+    text-align:center;
+    text-transform: capitalize;
+    background-color: rgb(255, 204, 0);
+}
+
+marquee{
+  text-transform: capitalize;
+  background-color: #faf9f9;
+  color:black;
+  font-size: larger;
+  
+
+}
+#mq p{
+  background-color:antiquewhite;
+  color:black;
+  display: inline;
+  
+  border-radius: 100px;
+}
+
+@media (max-width: 1000px) {
+  #pieChart{
+
+    margin-left:-10px;
+    width:100%;
+    
+    
+     
+     
+  }
+
+}
+
+
+
+
+.graph .labels.x-labels {
+    text-anchor: middle;
+  }
+  
+  .graph .labels.y-labels {
+    text-anchor: end;
+  }
+  
+  
+  .graph {
+    
+    width: 70%
+   
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .graph {
+        margin-left:-40px;
+        margin-top:140px;
+        width: 110%;
+        
+       
+       
+    }
+
+  }
+
+
+  
+  .graph .grid {
+    stroke: #ccc;
+
+    stroke-width: 2;
+  }
+  
+  .labels {
+    font-size: 13px;
+  }
+  
+
+/*overlapping divs*/
+
+.labels text{
+    font-size: larger;
+}
+
+#div1{
+  margin:auto;
+  background-color: grey;
+  text-align:center;
+
+}
